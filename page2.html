@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soup • Eat&Glow</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="controller.js" defer></script>
+    <script src="model.js" defer></script>
+    <script src="view.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => showCom?.());
+    </script>
+
+    <header>
+      <div class="brand-bar">
+        <img src="logo.png" alt="Eat&Glow logo" />
+        <h1>Eat&Glow</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Latest Posts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="sign.html">Sign Up</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+      </nav>
+
+      <h2>Salad</h2>
+				<p>Published: 31 May 2025</p>
+			</header>
+
+			<main>
+				<img src="salad.png" alt="Salad" />
+
+				<p>
+					<b>History and Origin</b> The term "salad" comes from the Latin
+					word "salata," which means "salted." Salads have been enjoyed
+					since ancient times, with early records of raw vegetable dishes
+					dating back to the Romans and Greeks. Over centuries, salads have
+					evolved, incorporating a variety of ingredients and dressings.<br />
+					<br />
+					<b>Nutritional Benefits</b>
+					Salads are often praised for their nutritional value. They are
+					typically high in vitamins, minerals, and fiber while being low in
+					calories, making them a healthy choice for many diets. The
+					versatility of salads allows for endless customization, catering
+					to different dietary needs and preferences.
+				</p>
+			</main>
+
+    <footer>
+      <div id="comArea"><h3>Comments</h3></div>
+
+      <form onsubmit="saveCom();">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="mail">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </footer>
+  </body>
+</html>
